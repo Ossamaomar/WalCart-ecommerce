@@ -8,7 +8,7 @@ const headers = {
 export async function checkoutSession({shippingAddress, id}) {
   try {
     const res = await axios.post(
-      `${BASE_URL}/api/v1/orders/checkout-session/${id}?url=http://localhost:5173`,
+      `${BASE_URL}/api/v1/orders/checkout-session/${id}?url=https://wal-cart-ecommerce.vercel.app`,
       { shippingAddress },
       { headers }
     );
